@@ -128,7 +128,7 @@ export const Landing = ()=>{
         reply. Even during giving the free tshirt, you guys called to know the size, but unfortunately the size is large
         on me. Any chances I can exchange with M size. Although I am loving my new racquet. - <b>Rajnish, New Delhi</b>
     </p>
-    <a class="home-btn" href="/pages/testimonials/pgid-1304966.aspx">View All</a>    
+    <a class="home-btn">View All</a>    
     </div>
 
 

@@ -16,23 +16,6 @@ import axios from "axios";
 
 import { useState } from "react";
 
-function Copyright(props) {
-  return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Sportjam
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
 
 const theme = createTheme();
 
@@ -173,25 +156,6 @@ export const Login = () => {
                           />
                         </Grid>
 
-                        <Grid container>
-                          <Grid item xs>
-                            <Link
-                              href="http://localhost:3000/signup"
-                              variant="body2"
-                            >
-                              {"New usert? register"}
-                            </Link>
-                          </Grid>
-                          <Grid item>
-                            <Link
-                              href="http://localhost:3000/forgotpass"
-                              variant="body2"
-                            >
-                              Forgot password?
-                            </Link>
-                          </Grid>
-                        </Grid>
-
                         <Button
                           className={style.subitbtn}
                           type="submit"
@@ -211,7 +175,6 @@ export const Login = () => {
                         </Grid>
 
                         {/*login-with-facebook-btn <Googleauth/> */}
-                        <Copyright sx={{ mt: 1 }} />
                       </Box>
                     </Box>
                   </Grid>

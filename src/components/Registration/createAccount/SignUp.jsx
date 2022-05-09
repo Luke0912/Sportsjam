@@ -10,10 +10,12 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Footer } from "../../footer/footer";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const theme = createTheme();
 
 export const Signup = () => {
+  const navigate = useNavigate()
   const [values, setValues] = useState({
     firstName : "",
     mobileNo: "",
@@ -43,6 +45,7 @@ export const Signup = () => {
     } catch (error) {
       alert(error.message);
     }
+    navigate("/login")
   };
 
   return (
